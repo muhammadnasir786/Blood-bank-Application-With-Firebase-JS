@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <title>All Post | Blood Bank Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBtoGqNcs1YuEluEjttc5tRceSvBeKA-zM",
+            authDomain: "bloodbankapp-6af82.firebaseapp.com",
+            databaseURL: "https://bloodbankapp-6af82.firebaseio.com",
+            projectId: "bloodbankapp-6af82",
+            storageBucket: "",
+            messagingSenderId: "31659115306"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+    <h1 id="h1">Blood Bank Application With Firebase</h1>
+    <h1 id="userName"></h1>
+
+
+    <hr/>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="list-group">
+                    <a href="">
+                        <li class="list-group-item">Create Profile</li>
+                    </a>
+                    <a href="../CreatePost/index.html">
+                        <li class="list-group-item">Create Post</li>
+                    </a>
+                    <a href="">
+                        <li class="list-group-item">Your Posts</li>
+                    </a>
+                    <a href="./index.html">
+                        <li class="list-group-item">All Posts</li>
+                    </a>
+
+                </ul>
+
+            </div>
+            <div class="col-md-8" id="allpost">
+                
+            </div>
+            <div class="col-md-2">
+                <ul class="list-group">
+                    <a href="">
+                        <li class="list-group-item">Create Profile</li>
+                    </a>
+                    <a href="">
+                        <li class="list-group-item">Create Post</li>
+                    </a>
+                    <a href="">
+                        <li class="list-group-item">Your Posts</li>
+                    </a>
+                    <a href="">
+                        <li class="list-group-item">All Posts</li>
+                    </a>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="allposts.js">
+
+    </script>
+</body>
+
+</html>
